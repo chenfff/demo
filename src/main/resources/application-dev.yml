@@ -1,0 +1,4 @@
+plumelog:
+    appName: plumelog_demo
+    redisHost: 127.0.0.1
+    redisPort: 6379

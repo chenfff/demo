@@ -1,0 +1,7 @@
+service:
+    port: 8080
+spring:
+    application:
+        name: helloDemo
+    profiles:
+        active: dev
