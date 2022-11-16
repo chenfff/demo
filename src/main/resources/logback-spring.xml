@@ -42,7 +42,7 @@
     <!-- 输出plumelog -->
     <appender name="plumelog" class="com.plumelog.logback.appender.RedisAppender">
         <appName>DemoPlume</appName>
-        <redisHost>127.0.0.1:6379</redisHost>
+        <redisHost>192.168.126.111:6379</redisHost>
 <!--        <redisAuth>${plumelog.redisAuth}</redisAuth>-->
 <!--        <redisDb>${plumelog.redisDb}</redisDb>-->
 <!--        <env>${plumelog.env}</env>-->

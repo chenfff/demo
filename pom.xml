@@ -34,13 +34,35 @@
 			<artifactId>plumelog-logback</artifactId>
 			<version>3.5.3</version>
 		</dependency>
+		<!--sleuth生成trace_id-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		<!--plumelog链路追踪相关-->
+		<dependency>
+			<groupId>com.plumelog</groupId>
+			<artifactId>plumelog-trace</artifactId>
+			<version>3.5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 		<!--end-->
 
-		<!--actuator监控-->
+		<!--actuator监控 prometheus收集-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
+		<!--end-->
+
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -56,6 +78,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.7.5</version>
 			</plugin>
 		</plugins>
 	</build>

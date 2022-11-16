@@ -1,4 +1,12 @@
-plumelog:
-    appName: plumelog_demo
-    redisHost: 127.0.0.1
-    redisPort: 6379
+#监控配置相关
+management:
+    endpoint:
+        health:
+            show-details: always
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+    metrics:
+        tags:
+            application: ${spring.application.name}
