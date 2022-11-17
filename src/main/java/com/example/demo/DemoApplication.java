@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 //plumelog-trace 提供链路日志
-@ComponentScan({"com.plumelog","com.example.demo.controller"})
+@ComponentScan({"com.plumelog","com.example.demo..*"})
 public class DemoApplication {
 
 	public static void main(String[] args) {
